@@ -75,6 +75,8 @@ project_fields:
     label: Name
   - field_name: description
     label: Description
+  - field_name: organization
+    label: Organization
   - field_name: featured
     label: Featured on Homepage
   - field_name: gh_org
@@ -85,3 +87,5 @@ project_fields:
     label: Directory in Github Repository
   - field_name: gh_url
     label: Github URL
+  - field_name: product_type
+    label: Product Type
