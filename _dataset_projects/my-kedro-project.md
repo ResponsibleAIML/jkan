@@ -6,4 +6,6 @@ gh_org: MyOrg
 gh_repo: MyRepo
 directory: MyDirectory
 gh_url: git@github.com:MyOrg/MyRepo.git
+organization: Sample Department
+product_type: model
 ---
