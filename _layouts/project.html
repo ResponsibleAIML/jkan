@@ -3,6 +3,8 @@ layout: default
 ---
 {% include breadcrumbs.html parent="Projects" %}
 {% assign datasets = site.datasets | where: "project", page.name %}
+{% assign project_fields = site.data.schemas[schema].project_fields %}
+{% assign project_system_fields = "name|gh_org|gh_repo|directory" | split: "|" %}
 {% assign datasets_count = datasets | size %}
 
 <div class="container">
@@ -20,6 +22,27 @@ layout: default
         <a href="{{ "/editor" | relative_url }}/#/collections/projects/entries/{{ page.slug }}" class="float-end btn btn-outline-secondary admin-only">Edit</a>
       </h1>
       <p>{{ page.description }}</p>
+
+      <h2>Additional Info</h2>
+        <table class="table table-striped dataset-details">
+          {% for field in project_fields %}
+            {% unless project_system_fields contains field.field_name %}
+              {% assign value = page[field[field_name]] %}
+              {% if value %}
+                {% if field.display_template %}
+                  {% include {{ field.display_template }} field=field value=value %}
+                {% else %}
+                  <tr>
+                    <th>{{ field.label }}</th>
+                    <td>{{ value }}</td>
+                  </tr>
+                {% endif %}
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+
+        </table>
+
       <div data-component="datasets-list" data-project="{{ page.name | slugify }}">
         <h3 class="datasets-count" data-hook="datasets-count">{{ datasets_count }}
           {% if datasets_count == 1 %}dataset{% else %}datasets{% endif %}</h3>
@@ -32,6 +55,9 @@ layout: default
              
            </dataset>
           {% endfor %}
+
+
+
          </div>
       </div>
     </div>
