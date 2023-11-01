@@ -5,7 +5,7 @@ layout: default
 {% assign schema = page.schema | default: site.schema %}
 {% assign datasets = site.datasets | where: "project", page.name %}
 {% assign project_fields = site.data.schemas[schema].project_fields %}
-{% assign project_system_fields = "name|description" | split: "|" %}
+{% assign project_system_fields = "name|description|featured" | split: "|" %}
 {% assign datasets_count = datasets | size %}
 
 <div class="container">
