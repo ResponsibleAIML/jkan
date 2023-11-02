@@ -69,10 +69,23 @@ category_fields:
     label: Logo Credit
   - field_name: featured
     label: Featured on Homepage
+
 project_fields:
   - field_name: name
     label: Name
   - field_name: description
     label: Description
+  - field_name: organization
+    label: Organization
   - field_name: featured
     label: Featured on Homepage
+  - field_name: gh_org
+    label: Github organization
+  - field_name: gh_repo
+    label: Github Repository
+  - field_name: directory
+    label: Directory in Github Repository
+  - field_name: gh_url
+    label: Github URL
+  - field_name: product_type
+    label: Product Type
