@@ -1,0 +1,166 @@
+---
+schema: default
+title: modular-spaceflights-reviews
+organization: demo_org
+notes: type = kedro_datasets.pandas.csv_dataset.CSVDataset
+resources:
+  - name: modular-spaceflights-reviews
+    url: 'https://github.com/ResponsibleAIML/django-kedro/tree/main/kedro-projects/demo-project-kedro/data/01_raw/reviews.csv'
+    format: csv
+category:
+  - 01-raw
+maintainer: 
+maintainer_email: 
+project:
+  - modular-spaceflights
+preview: |
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>shuttle_id</th>
+        <th>review_scores_rating</th>
+        <th>review_scores_comfort</th>
+        <th>review_scores_amenities</th>
+        <th>review_scores_trip</th>
+        <th>review_scores_crew</th>
+        <th>review_scores_location</th>
+        <th>review_scores_price</th>
+        <th>number_of_reviews</th>
+        <th>reviews_per_month</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>0</th>
+        <td>63561</td>
+        <td>97.0</td>
+        <td>10.0</td>
+        <td>9.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>9.0</td>
+        <td>10.0</td>
+        <td>133</td>
+        <td>1.65</td>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>36260</td>
+        <td>90.0</td>
+        <td>8.0</td>
+        <td>9.0</td>
+        <td>10.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>3</td>
+        <td>0.09</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>57015</td>
+        <td>95.0</td>
+        <td>9.0</td>
+        <td>10.0</td>
+        <td>9.0</td>
+        <td>10.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>14</td>
+        <td>0.14</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>14035</td>
+        <td>93.0</td>
+        <td>10.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>10.0</td>
+        <td>9.0</td>
+        <td>39</td>
+        <td>0.42</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>10036</td>
+        <td>98.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>92</td>
+        <td>0.94</td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td>45163</td>
+        <td>91.0</td>
+        <td>10.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>26</td>
+        <td>0.77</td>
+      </tr>
+      <tr>
+        <th>6</th>
+        <td>64643</td>
+        <td>95.0</td>
+        <td>9.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>118</td>
+        <td>1.12</td>
+      </tr>
+      <tr>
+        <th>7</th>
+        <td>23389</td>
+        <td>76.0</td>
+        <td>8.0</td>
+        <td>8.0</td>
+        <td>8.0</td>
+        <td>8.0</td>
+        <td>9.0</td>
+        <td>9.0</td>
+        <td>5</td>
+        <td>0.05</td>
+      </tr>
+      <tr>
+        <th>8</th>
+        <td>39934</td>
+        <td>96.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>9.0</td>
+        <td>38</td>
+        <td>0.49</td>
+      </tr>
+      <tr>
+        <th>9</th>
+        <td>57063</td>
+        <td>100.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>10.0</td>
+        <td>1</td>
+        <td>0.02</td>
+      </tr>
+    </tbody>
+  </table>
+---
