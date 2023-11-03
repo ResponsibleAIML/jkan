@@ -1,7 +1,7 @@
 ---
 schema: default
 title: anomaly-detection-pipeline-kedro-test-labels
-organization: demo_org
+organization: other_org
 notes: type = kedro_mlflow.io.artifacts.mlflow_artifact_dataset.CSVDataset.MlflowCSVDataset
 resources:
   - name: anomaly-detection-pipeline-kedro-test-labels

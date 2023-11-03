@@ -1,7 +1,7 @@
 ---
 schema: default
 title: anomaly-detection-pipeline-kedro-raw-daily-data
-organization: demo_org
+organization: other_org
 notes: type = kedro_mlflow.io.artifacts.mlflow_artifact_dataset.PartitionedDataset.MlflowPartitionedDataset::kedro_datasets.pandas.parquet_dataset
 resources:
   - name: anomaly-detection-pipeline-kedro-raw-daily-data

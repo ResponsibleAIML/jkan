@@ -1,7 +1,7 @@
 ---
 schema: default
 title: anomaly-detection-pipeline-kedro-evaluation-plot
-organization: demo_org
+organization: other_org
 notes: type = kedro_mlflow.io.artifacts.mlflow_artifact_dataset.MatplotlibWriter.MlflowMatplotlibWriter
 resources:
   - name: anomaly-detection-pipeline-kedro-evaluation-plot

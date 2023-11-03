@@ -1,7 +1,7 @@
 ---
 schema: default
 title: churn-prediction-classifier
-organization: demo_org
+organization: other_org
 notes: type = kedro_datasets.pickle.pickle_dataset.PickleDataset
 resources:
   - name: churn-prediction-classifier

@@ -1,7 +1,7 @@
 ---
 schema: default
 title: churn-prediction-preprocessed-abandono
-organization: demo_org
+organization: other_org
 notes: type = kedro_datasets.pandas.parquet_dataset.ParquetDataset
 resources:
   - name: churn-prediction-preprocessed-abandono

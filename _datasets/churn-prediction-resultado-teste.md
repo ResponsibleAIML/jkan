@@ -1,7 +1,7 @@
 ---
 schema: default
 title: churn-prediction-resultado-teste
-organization: demo_org
+organization: other_org
 notes: type = kedro_datasets.pandas.csv_dataset.CSVDataset
 resources:
   - name: churn-prediction-resultado-teste
